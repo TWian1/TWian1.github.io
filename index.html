@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mandelbrot</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <canvas height=500 width=500 id="canvas" style='margin-left:40px;'></canvas>
+  <div class = "sidebar" style='margin-left: 40px'>
+  <input type="checkbox" id="fractal" name="fractal" onclick="fractaltype()">
+<label for="fractal">Burning Ship?</label>
+    <input type="checkbox" id="az" name="az" onclick="autozoom()">
+<label for="az">Autozoom?</label><br><br>
+  <input type="number" id = "iter" min="10 max="30000">
+  <div class="zoom">
+      <input type="range" min="30" max="50840" value="1" class="slider" id="zoom" height="50" width="6000">
+    <label>Zoom</label>
+  </div>
+    
+  <h2 id="zoomtxt">zoom: </h2>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
