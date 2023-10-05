@@ -1,0 +1,53 @@
+.button {
+  background-color: #8fbaff;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
+.idxbutton {
+  background-color: #8fbaff;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
+.Idexbut{
+  text-align: center;
+  width: 50%;
+  background-color: #e86868;
+  height: 300px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.mainq{
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 0;
+  outline: 10px;
+  outline: 3px solid black;
+}
+.textq{
+  font-size: 160%;
+  margin: 15px;
+  margin-bottom: 40px;
+}
+.secondline{
+  display: inline-block;
+  width: 1000px;
+  height: 200px;
+}
+.inputtext{
+  margin-left: 60px;
+  visibility: hidden;
+}
