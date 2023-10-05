@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Play Wordle</title>
+    <link rel="shortcut icon" href="../Icons/Play.png">
+    <link href="../Data/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" 
+        src="../Data/Words.js">
+    </script>
+  </head>
+  <body style = "background-color: #45433f;">
+    <h1>Wordle Solver</h1>
+    <br><br>
+    <button class="button" id="changecolor" onclick="currentcol()">Light Mode</button>
+    <input class="button" type="button" onclick="location.href='../index.html';" value="Back?"/>
+    <br>
+    <iframe height="750px" width="100%" src="https://replit.com/@LiamWlaker2004/ReadyPreciousDictionaries?lite=true&outputonly=True" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+    <script type="text/javascript">
+      let curcol = "d";
+      function currentcol(){
+        if (curcol == "w"){
+          document.body.style.background = "#45433f";
+          document.getElementById("changecolor").innerText = "Light Mode";
+          curcol = "d"
+        }
+        else{
+          document.body.style.background = "white";
+          document.getElementById("changecolor").innerText = "Dark Mode";
+          curcol = "w"
+        }
+      }
+    </script>
+  </body>
+</html>
