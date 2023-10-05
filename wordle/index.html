@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Wordle Winner</title>
+  <link rel="shortcut icon" href="Icons/Home.png">
+  <link href="Data/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style = "background-color: #45433f;">
+  <br>
+  <br>
+  <div class = "mainq">
+    <div class = "Idexbut">
+      <p style = "color: white;" class = "textq">Bot Used to find the best wordle answers and the possible ones!</p>
+      <input type="button" class="idxbutton" onclick="location.href='Programs/wordlebot.html';" value="Wordle Bot"/>
+    </div>
+    <div class = "Idexbut">
+      <p style = "color: white;" class = "textq">Bot that finds the starter words of others only using the final word!</p>
+      <input type="button" class="idxbutton" onclick="location.href='Programs/wordlesolver.html';" value="Wordle Solver"/>
+    </div>
+    <div class = "Idexbut">
+      <p style = "color: white;" class = "textq">Play Wordle with a custom length or amount of guesses!</p>
+      <input type="button" class="idxbutton" onclick="location.href='Programs/Wordle.html';" value="Wordle"/>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <button class="button" id="changecolor" onclick="currentcol()">Light Mode</button>
+  <script type="text/javascript">
+    let curcol = "d";
+    function currentcol(){
+        if (curcol == "w"){
+          document.body.style.background = "#45433f";
+          document.getElementById("changecolor").innerText = "Light Mode";
+          curcol = "d"
+        }
+        else{
+          document.body.style.background = "white";
+          document.getElementById("changecolor").innerText = "Dark Mode";
+          curcol = "w"
+        }
+      }
+  </script>
+</body>
+</html>
